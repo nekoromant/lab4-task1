@@ -7,16 +7,16 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "rus");
-	int sum = 0, num;
+	int sum = 1, num;
 	for (int i = 0; i < 10; i++)
 	{
 		cout << "Введите число n" << i + 1 << ": ";
 		cin >> num;
 		if (num % 2 == 0) {
-			sum += num;
+			sum *= num;
 		}
 	}
-	cout << "Сумма чётных чисел: " << sum;
+	cout << "Произведение всех чётных чисел: " << sum;
 	return 0;
 }
 
